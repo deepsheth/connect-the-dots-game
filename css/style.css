@@ -57,6 +57,10 @@ h1 {
     min-width: 3em;
 }
 
+.dyn-alert {
+    text-align: center;
+}
+
 .blink {
     font-weight: bold;
     color: white !important;
@@ -125,7 +129,78 @@ footer a {
         box-sizing: border-box;
         margin-right: 0;
     }
+
+    .card-center {
+        text-align: center;
+    }
+
     footer {
         margin-top: 4em;
     }
+}
+
+.reveal {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+button {
+    background: rgba(255,255,255, .2);
+    border: none;
+    padding: .5em .75em;
+    font-weight: bold;
+    color: rgba(0,0,0, .6);
+}
+
+button:hover {
+    background: rgba(255,255,255, .4);
+    color: rgba(0,0,0, .9);
+}
+
+button:active {
+    background: rgba(255,255,255, .5);
+    color: rgba(0,0,0, 1);
+    outline: 3px solid white;
+}
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

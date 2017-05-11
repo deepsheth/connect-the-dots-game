@@ -15,12 +15,12 @@
     <meta http-equiv="X-UA-Compatible">
     <title>Dots Game</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.js"></script>
     <script src="./js/script.js"></script>
 </head>
@@ -33,8 +33,8 @@
         <canvas id="c" width="400" height="350"></canvas>
     </div>
     <div class="sidebar">
-        
-        <div class="card">
+
+        <div class="card card-center">
             <div class="dyn-alert"></div>
         </div>
 
@@ -48,7 +48,27 @@
             <div class="dyn-score">0</div>
         </div>
 
+        <div class="card">
+            <button id="btnHelp">Help</button>
+            <button class="reveal" id="btnRefresh" onClick="releadPage()">Restart</button>
+        </div>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <div data-role="header">
+                    <h3>Directions</h3>
+                </div>
+                <p>Tap a circle and drag nearby circles of the same color.</p>
+                <p>The longer the line, the more points you get.</p>
+                <p>No diagonal lines allowed!</p>
+            </div>
+
+        </div>
 
     </div>
     <footer>

@@ -29,6 +29,8 @@ var gameOver = false;
 
 $(document).ready(function () {
 
+    initModal();
+
     var canvas = new fabric.Canvas('c');
     canvas.selection = false;
     fabric.Object.prototype.transparentCorners = false;
@@ -249,6 +251,7 @@ $(document).ready(function () {
             $('.dyn-alert').text("Game Over!");
             $('.dyn-alert').addClass("blink");
             $('.dyn-time').removeClass("blink");
+            $('.reveal').addClass("show");
             gameOver = true;
         } else {
             $('.dyn-time').text(timeLeft);
@@ -257,6 +260,34 @@ $(document).ready(function () {
     }, 1000);
 
 });
+
+function initModal() {
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnHelp");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+}
 
 function shiftDotsDown(activeDotsColumns) {
     var numDupsFound = 0;
@@ -411,3 +442,7 @@ DoublyList.prototype.add = function (value) {
 
     return node;
 };
+
+function releadPage() {
+    location.reload();
+}
