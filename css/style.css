@@ -143,6 +143,25 @@ footer a {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    #canv-cont {
+        margin-left: .2em;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 1.75em;
+    }
+
+    .card>div {
+        font-size: 1.2em;
+    }
+
+    footer {
+        font-size: .8em;
+    }
+}
+
 .reveal {
     visibility: hidden;
 }
