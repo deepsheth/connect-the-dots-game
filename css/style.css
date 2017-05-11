@@ -146,7 +146,6 @@ footer a {
 @media only screen and (max-width: 500px) {
     #canv-cont {
         margin-left: .2em;
-        height: 300px;
     }
 
     h1 {
@@ -162,12 +161,16 @@ footer a {
     }
 }
 
+#btnRefresh {
+    display: inline-block;
+}
+
 .reveal {
-    visibility: hidden;
+    display: none;
 }
 
 .show {
-    visibility: visible;
+    display: block;
 }
 
 button {
