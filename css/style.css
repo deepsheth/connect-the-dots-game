@@ -1,20 +1,131 @@
+ /*
+    DEEP SHETH 
+    DSS218
+    CSE 264 FINAL PROJECT
+    5/13/2017
+    PUZZLE GAME: DOTS
+*/
+
 html {
     min-height: 100vh;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2b196+0,e7a98d+4,e6a68e+54,e19895+96,c98686+100 */
-    background: #f2b196;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f0b094+0,e5a290+94,e39e92+100 */
+    background: #f0b094;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #f2b196 0%, #e7a98d 4%, #e6a68e 54%, #e19895 96%, #c98686 100%);
+    background: -moz-linear-gradient(top, #f0b094 0%, #e5a290 94%, #e39e92 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f2b196 0%, #e7a98d 4%, #e6a68e 54%, #e19895 96%, #c98686 100%);
+    background: -webkit-linear-gradient(top, #f0b094 0%, #e5a290 94%, #e39e92 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f2b196 0%, #e7a98d 4%, #e6a68e 54%, #e19895 96%, #c98686 100%);
+    background: linear-gradient(to bottom, #f0b094 0%, #e5a290 94%, #e39e92 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2b196', endColorstr='#c98686', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b094', endColorstr='#e39e92', GradientType=0);
     /* IE6-9 */
 }
 
 #canv-cont {
-    display: block;
-    margin: 5em auto;
-    width: 600px;
+    display: inline-block;
+    margin: auto;
+    width: 400px;
+    height: 500px;
+    margin-left: 31vw;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+}
+
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card>div {
+    display: inline-block;
+    color: #D7503C;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+
+.card {
+    margin: 1em;
+}
+
+.card .title {
+    min-width: 3em;
+}
+
+.blink {
+    font-weight: bold;
+    color: white !important;
+    -webkit-animation: blink 1s steps(5, start) infinite;
+    -moz-animation: blink 1s steps(5, start) infinite;
+    -o-animation: blink 1s steps(5, start) infinite;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-moz-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-o-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: 300;
+    color: white;
+}
+
+footer a {
+    color: #D7503C;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    #canv-cont {
+        margin-left: 3em;
+        height: 350px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .sidebar {
+        display: block;
+    }
+    .card>div {
+        font-size: 1.5em;
+    }
+    .card {
+        margin-left: 3em;
+    }
+    .card-split {
+        width: 35%;
+        display: inline-block;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+    footer {
+        margin-top: 4em;
+    }
 }

@@ -1,20 +1,60 @@
+<!-- 
+    DEEP SHETH 
+    DSS218
+    CSE 264 FINAL PROJECT
+    5/13/2017
+    PUZZLE GAME: DOTS
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible">
     <title>Dots Game</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.js"></script>
     <script src="./js/script.js"></script>
 </head>
+
 <body>
 
+    <h1>Connect the Dots</h1>
+
     <div id="canv-cont">
-        <canvas id="c"  width="600" height="600"></canvas>
+        <canvas id="c" width="400" height="350"></canvas>
     </div>
+    <div class="sidebar">
+        
+        <div class="card">
+            <div class="dyn-alert"></div>
+        </div>
+
+        <div class="card card-split">
+            <div class="title">Time:</div>
+            <div class="dyn-time">60</div>
+        </div>
+
+        <div class="card card-split">
+            <div class="title">Score:</div>
+            <div class="dyn-score">0</div>
+        </div>
+
+
+
+    </div>
+    <footer>
+        <span>Made by Deep Sheth</span>
+        <span>| Inspired from <a href="https://www.dots.co/">the mobile game, Dots</a>
+    </footer>
 
 </body>
 </html>
