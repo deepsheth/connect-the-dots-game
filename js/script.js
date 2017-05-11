@@ -8,7 +8,6 @@ var color_scheme = [
     "#E03F3A",
     "#EADAB8",
     "#1A91A0",
-    "#e0a102",
     "#5566AC"
 ]; // dot colors
 
