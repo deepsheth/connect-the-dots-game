@@ -21,6 +21,10 @@ html {
     /* IE6-9 */
 }
 
+body {
+    font-family: sans-serif;
+}
+
 #canv-cont {
     display: inline-block;
     margin: auto;
